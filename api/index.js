@@ -7,7 +7,7 @@ const keyConfig = require("./config/key");
 const cors = require("cors");
 const path = require('path');
 mongoose
-  .connect( process.env.mongoDB_URI || keyConfig.mongoDBURI, {
+  .connect( process.env.MONGO_URI || keyConfig.mongoDBURI, {
     useUnifiedTopology: true,
     useNewUrlParser: true,
   })
